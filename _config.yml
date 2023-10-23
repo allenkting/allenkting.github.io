@@ -21,7 +21,7 @@ title                    : "Allen Ting"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Allen Ting"
-description              : "Personal Webiste & Portfolio, Version 1.0"
+description              : "Personal Website & Portfolio, Version 1.0"
 url                      : https://allenkting.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "allenkting/allenkting.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 # Site Author
 author:
   name             : "Allen Ting"
-  avatar           : "/assets/images/headshot_full.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/headshot_resized.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Hi! I'm Allen, a computer science student at the University of Texas at Austin. I'm originally from Houston, TX."
   location         : "Austin, TX, United States"
   email            : 
@@ -152,6 +152,10 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 # Reading Files
 include:
@@ -298,4 +302,12 @@ defaults:
     values:
       layout: single
       author_profile: True
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
   
