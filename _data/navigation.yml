@@ -2,9 +2,9 @@
 main:
   - title: "About Me"
     url: /about/
-  - title: "Research"
-    url: /portfolio/
-  - title: "Software Development"
+  - title: "My Research"
+    url: /research/
+  - title: "Software Projects"
     url: /software/
   # - title: "Sample Posts"
   #   url: /year-archive/

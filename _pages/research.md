@@ -1,8 +1,8 @@
 ---
 title: Machine Learning Research
 layout: collection
-permalink: /portfolio/
-collection: portfolio
+permalink: /research/
+collection: research
 entries_layout: grid
 classes: wide
 ---
