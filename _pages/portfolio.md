@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: Machine Learning Research
 layout: collection
 permalink: /portfolio/
 collection: portfolio

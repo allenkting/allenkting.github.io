@@ -13,7 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "neon" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -107,7 +107,7 @@ analytics:
 author:
   name             : "Allen Ting"
   avatar           : "/assets/images/headshot_resized.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hi! I'm Allen, a computer science student at the University of Texas at Austin. I'm originally from Houston, TX."
+  bio              : "Hi! I'm a computer science student at the University of Texas at Austin. I'm originally from Houston, TX."
   location         : "Austin, TX, United States"
   email            : 
   links:
@@ -301,7 +301,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: True
+      author_profile: true
   # _portfolio
   - scope:
       path: ""
