@@ -107,7 +107,13 @@ analytics:
 author:
   name             : "Allen Ting"
   avatar           : "/assets/images/headshot_resized.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hi! I'm a computer science student at the University of Texas at Austin. I'm originally from Houston, TX."
+  bio              : "B.S., Computer Science Student  \n  
+  Minor in Communication Studies  \n  
+  College of Natural Sciences  \n  
+  University of Texas at Austin  \n  \n  
+  President, The Ransom Notes  \n  
+  Vice President, UT CS Roadshow  \n  
+  Texas Blazers"
   location         : "Austin, TX, United States"
   email            : 
   links:

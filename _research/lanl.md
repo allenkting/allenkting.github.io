@@ -1,7 +1,10 @@
 ---
 toc: true
-title: "Los Alamos National Laboratory"
-subtitle: "June 2022 - Dec 2022"
+author_profile: true
+title: "LANL"
+excerpt: "Research I did as an intern at Los Alamos National Lab!"
+header:
+    teaser: /assets/images/lanl_logo.png
 read_time: true
 ---  
 
@@ -22,18 +25,34 @@ We present a physics-constrained **deep convolutional neural network (CNN)** tha
 Poster Presentation:
 I presented this research at the American Geophysical Union Fall Meeting in Chicago, IL in 2022. The full poster presentation is shown below.
 
-Check out the [full article](https://www.mdpi.com/1996-1073/15/23/8871) published in *Energies*!
+***Check out the poster here!***  
 
-## Undergraduate Research  
-
-*Aug 2020 - Aug 2021*  
-
-#### Orphan Well Database 
-
-Quick summary of problem.
-
-#### Optimizing EV Charger Locations
+[![Poster Presentation](/assets/images/poster.png 'Poster Presentation')](/assets/files/symposium_poster.pdf)  
 
 
-#### Oil Basin Analysis 
+***Check out the*** [***full article***](https://www.mdpi.com/1996-1073/15/23/8871) ***published in Energies!***
 
+
+<!-- ---
+title: "Foo Bar Identity"
+excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+header:
+  image: /assets/images/foo-bar-identity.jpg
+sidebar:
+  - title: "Role"
+    image: http://placehold.it/350x250
+    image_alt: "logo"
+    text: "Designer, Front-End Developer"
+  - title: "Responsibilities"
+    text: "Reuters try PR stupid commenters should isn't a business model"
+gallery:
+  - url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+  - url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+  - url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
+--- -->
