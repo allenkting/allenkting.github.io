@@ -1,14 +1,15 @@
 ---
 toc: true
 author_profile: true
-title: "LANL"
+title: "CNNs for Multiphase Flow"
 excerpt: "Research I did as an intern at Los Alamos National Lab!"
 header:
-    teaser: /assets/images/lanl_logo.png
+    teaser: /assets/images/sim_3d.png
 read_time: true
+order: 1
 ---  
 
-At Los Alamos National Lab, I worked with two staff scientists on a project examining multiphase flow simulations in subsurface fractures.
+At Los Alamos National Lab, I worked with two staff scientists on a project examining multiphase flow simulations in subsurface fractures. This is an abridged summary of the [**full article**](https://www.mdpi.com/1996-1073/15/23/8871) published in *Energies*!
 
 #### Problem & Motivation
 
@@ -18,20 +19,28 @@ We present a physics-constrained **deep convolutional neural network (CNN)** tha
 
 #### Methods 
 
-![Workflow Diagram showing mapping of 3D simulations to 2D images.](/assets/images/workflow_chart.png)
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/workflow_chart.png" alt="">
+  <figcaption align="center">Workflow Diagram showing mapping of 3D simulations to 2D images.</figcaption>
+</figure>  
+
+To make computations lightweight and scalable to different fracture sizes, we design a workflow to project the input 3D simulation into two 2D maps that represent the top and bottom surfaces of the fracture. For each timestep, we then use the fracture shape to output two 2D maps, representing the the position of the top and bottom of the menisci of the fluid CO<sub>2</sub> with respect to the fracture's aperture size. Finally, the predicted 3D simulation of the CO<sub>2</sub> (red) displacing water (blue) is reconstructed. For details on the convollutional neural network architecture, please read section 3 in the paper.
 
 #### Results 
 
-Poster Presentation:
-I presented this research at the American Geophysical Union Fall Meeting in Chicago, IL in 2022. The full poster presentation is shown below.
+We tested our model using 40 timesteps from two fractures which had never been seen by the machine learning algorithm. Overall, the shape of the plume and phase distributions are accurately predicted. In general, the algorithm predicts sharper interfaces than the simulation, but if these model outputs were used as an input into an LBM simulation, capillary forces would immediately smooth this result. In this way, a coupled LBM and machine learning scheme could be devised where the LBM resolves the interface from the algorithm at certain intervals. The end result makes 3D multiphase flow predictions easy with applied boundary conditions. An example of one prediction that shows the model's accuracy in 3D is shown below.  
 
-***Check out the poster here!***  
+<figure class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/pred_3d.png" alt="">
+  <figcaption align="center">Ground Truth Simulation vs. 3D Prediction.</figcaption>
+</figure>  
+
+Multiphase flow in fractures is important to many engineering applications, and for future work, we plan to create a larger dataset of simulations with different fractures and conditions to help further develop the capabilities of our machine learning algorithms.  
+
+#### AGU Poster (2022)
+I presented this research at the American Geophysical Union Fall Meeting in Chicago, IL in 2022. The full poster presentation is linked in the image below.
 
 [![Poster Presentation](/assets/images/poster.png 'Poster Presentation')](/assets/files/symposium_poster.pdf)  
-
-
-***Check out the*** [***full article***](https://www.mdpi.com/1996-1073/15/23/8871) ***published in Energies!***
-
 
 <!-- ---
 title: "Foo Bar Identity"
